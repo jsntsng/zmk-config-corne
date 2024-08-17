@@ -16,11 +16,5 @@
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #     artifact-name: corne_left_with_logging
 #
----
-include:
-  - board: nice_nano_v2
-  - shield: corne_left
-  + shield: corne_left nice_view_adapter nice-view
-  - board: nice_nano_v2
-  - shield: corne_right
-  + shield: corne_right nice_view_adapter nice-view
+- west build -p -b nice_nano_v2 -- -DSHIELD="nice_nano_v2"
++ west build -p -b nice_nano_v2 -- -DSHIELD="nice_nano_v2_left nice_view_adapter nice_view"
