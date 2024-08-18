@@ -22,13 +22,13 @@
 &none  &kp Q            &kp W           &kp E        &kp R         &kp T           &kp Y         &kp U            &kp I        &kp O            &kp P                &none
 &none  &mt LEFT_META A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHIFT F  &kp G           &kp H         &mt RSHIFT J     &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_META SEMI  &none
 &none  &kp Z            &kp X           &kp C        &kp V         &kp B           &kp N         &kp M            &kp COMMA    &kp DOT          &kp FSLH             &none
-                                        &caps_word   &lt 3 SPACE   &lt 2 RETURN    &lt 4 RETURN  &lt 3 BACKSPACE  &kp DEL
+                                        &caps_word   &lt 3 SPACE   &lt 2 RETURN    &lt 2 RETURN  &lt 3 BACKSPACE  &lt 4 DEL
             >;
         };
 
         COLEMAK-DH {
             bindings = <
-&none  &kp Q            &kp W           &kp F        &kp P         &kp B     &kp J   &kp L         &kp U        &kp Y            &kp SEMICOLON     &none
+&none  &kp Q            &kp W           &kp F        &kp P         &kp B     &kp J   &kp L         &kp U        &kp Y            &kp SQT           &none
 &none  &mt LEFT_META A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHIFT T  &kp G     &kp M   &mt RSHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt RIGHT_META O  &none
 &none  &kp Z            &kp X           &kp C        &kp D         &kp V     &kp K   &kp H         &trans       &trans           &trans            &none
                                         &trans       &trans        &trans    &trans  &trans        &trans
@@ -37,28 +37,28 @@
 
         SYM_NUM {
             bindings = <
-&none  &none  &none  &none  &none  &none    &kp SLASH     &kp N7        &kp N8        &kp N9        &kp MINUS  &none
-&none  &none  &none  &none  &none  &none    &kp ASTERISK  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &none
-&none  &none  &none  &none  &none  &none    &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &none
-                     &none  &none  &none    &trans        &trans        &kp CLEAR
+&none  &kp EXCL              &kp AT          &kp HASH        &kp DLLR             &kp PRCNT        &mt BSLH FSLH  &kp N7        &kp N8        &kp N9        &kp MINUS  &none
+&none  &kp CARET             &kp AMPS        &kp ASTRK       &kp LPAR             &kp RPAR         &kp ASTERISK   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &none
+&none  &mt MINUS UNDERSCORE  &mt PLUS EQUAL  &mt COLON SEMI  &mt LEFT_BRACE LBKT  &mt RBRC RBKT    &kp N0         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT    &none
+                                             &none           &none                &none            &trans         &trans        &kp CLEAR
             >;
         };
 
         NAV {
             bindings = <
-&none  &kp F9  &kp F10  &kp F11  &kp F12       &tog 1           &kp PG_UP      &kp HOME  &kp UP    &kp END    &none  &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8        &kp TAB          &kp PG_DN      &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
-&none  &kp F1  &kp F2   &kp F3   &kp F4        &kp GRAVE        &none          &none     &none     &none      &none  &none
-                        &none    &kp LEFT_ALT  &kp LEFT_META    &kp LG(SPACE)  &none     &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12       &kp ESC            &kp PG_UP      &kp HOME  &kp UP    &kp END    &none  &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8        &kp TAB            &kp PG_DN      &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4        &mt TILDE GRAVE    &none          &none     &none     &none      &none  &none
+                        &none    &kp LEFT_ALT  &kp LEFT_META      &kp LG(SPACE)  &none     &none
             >;
         };
 
         hotkeys {
             bindings = <
-&none  &none       &none      &none       &none        &none         &none  &none  &none  &none  &none  &none
-&none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &none  &none  &none  &none  &none  &none
-&none  &none       &none      &none       &none        &none         &none  &none  &none  &none  &none  &none
-                              &none       &none        &none         &none  &none  &none
+&none  &none       &none      &none       &none        &none         &tog 1  &none  &none  &none  &none  &none
+&none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &none   &none  &none  &none  &none  &none
+&none  &none       &none      &none       &none        &none         &none   &none  &none  &none  &none  &none
+                              &none       &none        &none         &none   &none  &none
             >;
         };
     };
