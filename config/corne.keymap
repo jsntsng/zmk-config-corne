@@ -12,7 +12,7 @@
         onepass: op {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(O) &kp K &kp Z &kp S &kp F &kp N4 &kp O &kp N8 &kp N3 &kp C &kp A &kp B &kp Z &kp DOT &kp N9 &kp E &kp N4 &kp B &kp S &kp N &kp A &kp LS(P)>;
+            bindings = <&kp LS(O) &kp K &kp Z &kp S &kp F &kp N4 &kp O &kp N8 &kp N3 &kp C &kp A &kp B &kp Z &kp DOT &kp N9 &kp E &kp N4 &kp B &kp S &kp N &kp A &kp LS(P) &kp RETURN>;
             label = "OP";
         };
     };
@@ -28,18 +28,18 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W           &kp E        &kp R         &kp T          &kp Y         &kp U            &kp I        &kp O            &kp P     &none
-&none  &kp A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHIFT F  &mt LMETA G    &mt RMETA H   &mt RSHIFT J     &mt RCTRL K  &mt RIGHT_ALT L  &kp SEMI  &none
-&none  &kp Z  &kp X           &kp C        &kp V         &kp B          &kp N         &kp M            &kp COMMA    &kp DOT          &kp FSLH  &none
-                              &caps_word   &lt 3 SPACE   &lt 2 SPACE    &lt 2 RETURN  &lt 3 BACKSPACE  &lt 4 DEL
+&none  &kp Q  &kp W           &kp E        &kp R         &kp T           &kp Y        &kp U            &kp I        &kp O            &kp P              &none
+&none  &kp A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHIFT F  &mt LMETA G     &mt RMETA H  &mt RSHIFT J     &mt RCTRL K  &mt RIGHT_ALT L  &mt DQT SQT        &none
+&none  &kp Z  &kp X           &kp C        &kp V         &kp B           &kp N        &kp M            &kp COMMA    &kp DOT          &mt QUESTION FSLH  &none
+                              &caps_word   &lt 3 ESC     &lt 2 RETURN    &lt 2 SPACE  &lt 3 BACKSPACE  &lt 4 DEL
             >;
         };
 
         COLEMAK-DH {
             bindings = <
-&none  &kp Q  &kp W           &kp F        &kp P         &kp B          &kp J        &kp L         &kp U        &kp Y            &kp SQT  &none
-&none  &kp A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHIFT T  &mt LMETA G    &mt RMETA M  &mt RSHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &kp O    &none
-&none  &kp Z  &kp X           &kp C        &kp D         &kp V          &kp K        &kp H         &trans       &trans           &trans   &none
+&none  &kp Q  &kp W           &kp F        &kp P         &kp B          &kp J        &kp L         &kp U        &kp Y            &mt DQT SQT  &none
+&none  &kp A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHIFT T  &mt LMETA G    &mt RMETA M  &mt RSHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &kp O        &none
+&none  &kp Z  &kp X           &kp C        &kp D         &kp V          &kp K        &kp H         &trans       &trans           &trans       &none
                               &trans       &trans        &trans         &trans       &trans        &trans
             >;
         };
