@@ -19,19 +19,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q            &kp W           &kp E        &kp R         &kp T           &kp Y         &kp U            &kp I        &kp O            &kp P                &none
-&none  &mt LEFT_META A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHIFT F  &kp G           &kp H         &mt RSHIFT J     &mt RCTRL K  &mt RIGHT_ALT L  &mt RIGHT_META SEMI  &none
-&none  &kp Z            &kp X           &kp C        &kp V         &kp B           &kp N         &kp M            &kp COMMA    &kp DOT          &kp FSLH             &none
-                                        &caps_word   &lt 3 SPACE   &lt 2 RETURN    &lt 2 RETURN  &lt 3 BACKSPACE  &lt 4 DEL
+&none  &kp Q  &kp W           &kp E        &kp R         &kp T           &kp Y         &kp U            &kp I        &kp O            &kp P     &none
+&none  &kp A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHIFT F  &mt LMETA G     &mt RMETA H   &mt RSHIFT J     &mt RCTRL K  &mt RIGHT_ALT L  &kp SEMI  &none
+&none  &kp Z  &kp X           &kp C        &kp V         &kp B           &kp N         &kp M            &kp COMMA    &kp DOT          &kp FSLH  &none
+                              &caps_word   &lt 3 SPACE   &lt 2 RETURN    &lt 2 RETURN  &lt 3 BACKSPACE  &lt 4 DEL
             >;
         };
 
         COLEMAK-DH {
             bindings = <
-&none  &kp Q            &kp W           &kp F        &kp P         &kp B     &kp J   &kp L         &kp U        &kp Y            &kp SQT           &none
-&none  &mt LEFT_META A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHIFT T  &kp G     &kp M   &mt RSHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt RIGHT_META O  &none
-&none  &kp Z            &kp X           &kp C        &kp D         &kp V     &kp K   &kp H         &trans       &trans           &trans            &none
-                                        &trans       &trans        &trans    &trans  &trans        &trans
+&none  &kp Q  &kp W           &kp F        &kp P         &kp B          &kp J        &kp L         &kp U        &kp Y            &kp SQT  &none
+&none  &kp A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHIFT T  &mt LMETA G    &mt RMETA M  &mt RSHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &kp O    &none
+&none  &kp Z  &kp X           &kp C        &kp D         &kp V          &kp K        &kp H         &trans       &trans           &trans   &none
+                              &trans       &trans        &trans         &trans       &trans        &trans
             >;
         };
 
@@ -55,10 +55,10 @@
 
         hotkeys {
             bindings = <
-&none  &none       &none      &none       &none        &none         &tog 1  &none  &none  &none  &none  &none
-&none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &none   &none  &none  &none  &none  &none
-&none  &none       &none      &none       &none        &none         &none   &none  &none  &none  &none  &none
-                              &none       &none        &none         &none   &none  &none
+&none  &none       &none      &none       &none        &none         &none  &none  &none  &none  &none  &tog 1
+&none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &none  &none  &none  &none  &none  &none
+&none  &none       &none      &none       &none        &none         &none  &none  &none  &none  &none  &none
+                              &none       &none        &none         &none  &none  &none
             >;
         };
     };
