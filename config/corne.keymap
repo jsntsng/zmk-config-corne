@@ -37,7 +37,7 @@
         };
 
         COLEMAK-DH {
-            display-name = "CLMKDH";
+            display-name = "Colemak";
             bindings = <
 &none  &kp Q  &kp W           &kp F        &kp P         &kp B          &kp J        &kp L         &kp U        &kp Y            &mt DQT SQT  &none
 &none  &kp A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHIFT T  &mt LMETA G    &mt RMETA M  &mt RSHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &kp O        &none
