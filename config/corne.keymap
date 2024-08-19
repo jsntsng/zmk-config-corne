@@ -8,6 +8,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        onepass: op {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(O) &kp K &kp Z &kp S &kp F &kp N4 &kp O &kp N8 &kp N3 &kp C &kp A &kp B &kp Z &kp DOT &kp N9 &kp E &kp N4 &kp B &kp S &kp N &kp A &kp LS(P)>;
+            label = "OP";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -19,10 +28,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W           &kp E        &kp R         &kp T           &kp Y         &kp U            &kp I        &kp O            &kp P     &none
-&none  &kp A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHIFT F  &mt LMETA G     &mt RMETA H   &mt RSHIFT J     &mt RCTRL K  &mt RIGHT_ALT L  &kp SEMI  &none
-&none  &kp Z  &kp X           &kp C        &kp V         &kp B           &kp N         &kp M            &kp COMMA    &kp DOT          &kp FSLH  &none
-                              &caps_word   &lt 3 SPACE   &lt 2 RETURN    &lt 2 RETURN  &lt 3 BACKSPACE  &lt 4 DEL
+&none  &kp Q  &kp W           &kp E        &kp R         &kp T          &kp Y         &kp U            &kp I        &kp O            &kp P     &none
+&none  &kp A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHIFT F  &mt LMETA G    &mt RMETA H   &mt RSHIFT J     &mt RCTRL K  &mt RIGHT_ALT L  &kp SEMI  &none
+&none  &kp Z  &kp X           &kp C        &kp V         &kp B          &kp N         &kp M            &kp COMMA    &kp DOT          &kp FSLH  &none
+                              &caps_word   &lt 3 SPACE   &lt 2 SPACE    &lt 2 RETURN  &lt 3 BACKSPACE  &lt 4 DEL
             >;
         };
 
@@ -55,10 +64,10 @@
 
         hotkeys {
             bindings = <
-&none  &none       &none      &none       &none        &none         &none  &none  &none  &none  &none  &tog 1
-&none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &none  &none  &none  &none  &none  &none
-&none  &none       &none      &none       &none        &none         &none  &none  &none  &none  &none  &none
-                              &none       &none        &none         &none  &none  &none
+&none  &none       &none      &none       &none        &none         &onepass  &none  &none  &none  &tog 1  &none
+&none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &none     &none  &none  &none  &none   &none
+&none  &none       &none      &none       &none        &none         &none     &none  &none  &none  &none   &none
+                              &none       &none        &none         &none     &none  &none
             >;
         };
     };
