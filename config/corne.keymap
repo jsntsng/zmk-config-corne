@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -64,10 +65,10 @@
 
         hotkeys {
             bindings = <
-&none  &none       &none      &none       &none        &none         &onepass  &none  &none  &none  &tog 1  &none
-&none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &none     &none  &none  &none  &none   &none
-&none  &none       &none      &none       &none        &none         &none     &none  &none  &none  &none   &none
-                              &none       &none        &none         &none     &none  &none
+&none  &none       &none      &none       &none        &none         &bt BT_SEL 0  &none  &none  &none  &tog 1  &none
+&none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &bt BT_SEL 1  &none  &none  &none  &none   &none
+&none  &none       &none      &none       &none        &none         &bt BT_SEL 2  &none  &none  &none  &none   &none
+                              &none       &none        &none         &none         &none  &none
             >;
         };
     };
