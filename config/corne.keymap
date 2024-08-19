@@ -56,19 +56,19 @@
 
         NAV {
             bindings = <
-&none  &kp F9  &kp F10  &kp F11  &kp F12       &kp ESC            &kp PG_UP      &kp HOME      &kp UP    &kp END        &none  &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8        &kp TAB            &kp PG_DN      &kp LEFT      &kp DOWN  &kp RIGHT      &none  &none
-&none  &kp F1  &kp F2   &kp F3   &kp F4        &mt TILDE GRAVE    &none          &kp LG(LEFT)  &none     &kp LG(RIGHT)  &none  &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12       &kp ESC            &kp PG_UP      &kp HOME      &kp UP    &kp END        &bt BT_SEL 0  &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8        &kp TAB            &kp PG_DN      &kp LEFT      &kp DOWN  &kp RIGHT      &bt BT_SEL 1  &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4        &mt TILDE GRAVE    &none          &kp LG(LEFT)  &none     &kp LG(RIGHT)  &bt BT_CLR    &none
                         &none    &kp LEFT_ALT  &kp LEFT_META      &kp LG(SPACE)  &none         &none
             >;
         };
 
         hotkeys {
             bindings = <
-&none  &none       &none      &none       &none        &none         &bt BT_SEL 0  &none  &none  &none  &tog 1  &none
-&none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &bt BT_SEL 1  &none  &none  &none  &none   &none
-&none  &none       &none      &none       &none        &none         &bt BT_SEL 2  &none  &none  &none  &none   &none
-                              &none       &none        &none         &none         &none  &none
+&none  &none       &none      &none       &none        &none         &onepass  &none  &none  &none  &tog 1  &none
+&none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &none     &none  &none  &none  &none   &none
+&none  &none       &none      &none       &none        &none         &none     &none  &none  &none  &none   &none
+                              &none       &none        &none         &none     &none  &none
             >;
         };
     };
