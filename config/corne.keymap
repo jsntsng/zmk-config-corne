@@ -27,7 +27,7 @@
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
+            display-name = "QWERTY";
             bindings = <
 &none  &kp Q  &kp W           &kp E        &kp R         &kp T          &kp Y         &kp U         &kp I            &kp O            &kp P              &none
 &none  &kp A  &mt LEFT_ALT S  &mt LCTRL D  &mt LSHIFT F  &mt LMETA G    &mt RMETA H   &mt RSHIFT J  &mt RCTRL K      &mt RIGHT_ALT L  &mt DQT SQT        &none
@@ -37,6 +37,7 @@
         };
 
         COLEMAK-DH {
+            display-name = "Colemak-DH";
             bindings = <
 &none  &kp Q  &kp W           &kp F        &kp P         &kp B          &kp J        &kp L         &kp U        &kp Y            &mt DQT SQT  &none
 &none  &kp A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHIFT T  &mt LMETA G    &mt RMETA M  &mt RSHIFT N  &mt RCTRL E  &mt RIGHT_ALT I  &kp O        &none
@@ -46,6 +47,7 @@
         };
 
         SYM_NUM {
+            display-name = "SYN_NUM";
             bindings = <
 &none  &kp EXCL              &kp AT          &kp HASH        &kp DLLR             &kp PRCNT        &mt BSLH FSLH  &kp N7        &kp N8        &kp N9        &kp MINUS  &none
 &none  &kp CARET             &kp AMPS        &kp ASTRK       &kp LPAR             &kp RPAR         &kp ASTERISK   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &none
@@ -55,6 +57,7 @@
         };
 
         NAV {
+            display-name = "NAV";
             bindings = <
 &none  &kp F9  &kp F10  &kp F11  &kp F12       &kp ESC            &kp PG_UP      &kp HOME      &kp UP    &kp END        &bt BT_SEL 0  &none
 &none  &kp F5  &kp F6   &kp F7   &kp F8        &kp TAB            &kp PG_DN      &kp LEFT      &kp DOWN  &kp RIGHT      &bt BT_SEL 1  &none
@@ -64,6 +67,7 @@
         };
 
         hotkeys {
+            display-name = "HOTKEYS";
             bindings = <
 &none  &none       &none      &none       &none        &none         &onepass  &none  &none  &none  &tog 1  &none
 &none  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &none     &none  &none  &none  &none   &none
